@@ -33,6 +33,11 @@ The following files are included in this repository:
 ### Training
 To train the model, run the `python main.py --train` script his will train the model on the IAM dataset and save the trained model parameters in the data directory.
 
+### Validation
+To validate the model, run the `python main.py --validate` script This will test the accuracy of the trained model on the validation set of the IAM dataset.
+
+### Testing
+To test the model on a single image, run the `python main.py image_path` script Replace `image_path` with the path to the image you want to test.
 
 
 
