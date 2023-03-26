@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Handwritten Text Recog</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="/">
+            <h1>Handwritten Text Recog</h1>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <section class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1 class="display-4">Prediction Result</h1>
+            <div class="alert alert-info mt-5" role="alert">
+              <h1 class="display-5">{{ text }}</h1>
+            </div>
+            <br>
+            <a class="btn btn-primary" href="/">Upload another image</a>
+          </div>
+          <div class="col-md-6">
+             <!-- <h1 class="display-4">Input Image</h1> -->
+            <!-- <img src="{{ image_filename }}" class="img-fluid mt-5">  -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+  </body>
+</html>
