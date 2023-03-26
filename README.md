@@ -2,7 +2,7 @@
 
 
 
-This repository contains the code for a Flask web application that uses a pre-trained deep learning model to classify images. 
+This repository contains the code for a Flask web application that uses a  deep learning model to recognise handwritten text convert it into digital text. 
 
 ### Requirements
 - Python 3.8 or higher
